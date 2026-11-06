@@ -32,10 +32,10 @@ function showSkeletons() {
 
 async function fetchMovies(searchTerm) {
     showSkeletons();
-    
+
     try {
 
-        const res = await fetch(`http://www.omdbapi.com/?apikey=160f0492&s=${searchTerm}`);
+        const res = await fetch(`https://www.omdbapi.com/?apikey=160f0492&s=${searchTerm}`);
         const data = await res.json();
 
         if (data.Response === 'True') {
